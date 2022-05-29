@@ -1720,7 +1720,6 @@ void write_table(struct table_helper *table_h_new, struct table_helper *table_h_
 }
 
 int main(int argc, char **argv) {
-    no_coreelec();
     get_options(argc, argv);
     struct disk_helper disk = { 0, 0, get_disk_size()};
     struct partition_table *table = calloc(1, SIZE_TABLE);
